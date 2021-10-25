@@ -1,1 +1,10 @@
-//
+@import "partials/variables";
+@import "partials/generals";
+@import "partials/content";
+@import "partials/header";
+@import "partials/footer";
+
+body {
+    font-size: larger;
+}
+
