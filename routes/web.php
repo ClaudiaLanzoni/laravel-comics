@@ -30,3 +30,8 @@ Route::get('/movies', function () {
 Route::get('/tv', function () {
     return view('tv');
 })->name('tv');
+
+Route::get('/comic', function () {
+    $comics = config('comics');
+    return view('comic', ['comic' => $comics[1] ]);
+})->name('comic'); 

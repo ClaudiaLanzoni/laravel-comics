@@ -143,6 +143,11 @@ footer .btn_footer {
   font-family: "Staatliches";
 }
 
+.container_char_card {
+  background-color: cadetblue;
+  height: 1000px;
+}
+
 .container {
   padding: 0 200px 0 200px;
 }

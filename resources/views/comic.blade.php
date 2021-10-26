@@ -6,36 +6,41 @@
     <div class="container_char_card">
 
         {{-- thumb --}}
-        <img src="" alt="">
+        <img src="{{ $comic['thumb'] }}" alt="Comic image">
 
         {{-- type --}}
-        <div></div>
+        <div>{{$comic['type']}}</div>
         
         {{-- title --}}
-        <h2></h2>
+        <h2>{{$comic['title']}}</h2>
 
         {{-- price --}}
         <div>
-            <div></div>
+            <div>{{$comic['price']}}</div>
 
-            <img src="{{asset('images/adv.jpg')}}" alt="Advertising image">
+            <img class="" src="{{ asset('images/apply.png') }}" alt="Comic image">
         </div>
 
         {{-- description --}}
-        <p></p>
+        <p>{{$comic['description']}}</p>
 
         {{-- specifiche prodotto --}}
         <div>
             <div>
                 <h3>Talent</h3>
 
-                {{-- artists --}}
-                <div>Art by:</div>
-                <p></p>
-
-                {{-- writers --}}
-                <div>Written by:</div>
-                <p></p>
+                @foreach ($comic['artists'] as $artist)
+                    {{-- artists --}}
+                    <div>Art by:</div>
+                    <p>{{$artist}}</p>
+                @endforeach
+                
+                @foreach ($comic['writers'] as $writer)
+                    {{-- writers --}}
+                    <div>Written by:</div>
+                    <p>{{$writer}}</p>
+                @endforeach
+                
             </div>
 
             <div>
@@ -43,15 +48,15 @@
 
                 {{-- series --}}
                 <div>Series:</div>
-                <p></p>
+                <p>{{$comic['series']}}</p>
 
                 {{-- price --}}
                 <div>U.S. Price:</div>
-                <p></p>
+                <p>{{$comic['price']}}</p>
 
                 {{-- sale_date --}}
                 <div>On Sale Date:</div>
-                <p></p>
+                <p>{{$comic['sale_date']}}</p>
             </div>
         </div>
     </div>
