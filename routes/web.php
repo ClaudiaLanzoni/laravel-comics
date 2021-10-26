@@ -18,8 +18,10 @@ Route::get('/', function () {
 })->name('characters');
 
 Route::get('/comics', function () {
-    return view('comics');
-})->name('comics');
+    $comics_carousel = config('comics');
+    return view('comics', ['comics' => $comics_carousel ]);
+})->name('comics'); 
+// la "chiave" dell'array è la variabile assegnata a config
 
 Route::get('/movies', function () {
     return view('movies');
