@@ -18,7 +18,9 @@
         @include('partials.header', ['header_links' => config('header_menu')])
 
     </div>
-    
+
+    <div class="jumbotron"></div>
+    <div class="banner"></div>
 
         <main class="main_wrap">
             
@@ -27,7 +29,7 @@
             
         </main>
 
-       
+        
 
         @include('partials.footer', ['footer_links' => config('footer_menu')])
 

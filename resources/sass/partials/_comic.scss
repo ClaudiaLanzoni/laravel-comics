@@ -1,5 +1,48 @@
 
 .container_char_card {
-    background-color: cadetblue;
-    height: 1000px;
+    background-color: $whiteColor;
+    height: 450px;
+    padding: 50px 300px;
+}
+
+.descr_wrap {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.descr_first_half {
+    margin-right: 100px;
+}
+
+.spec_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.specs {
+    margin-right: 140px;
+}
+
+.relative {
+    position: relative;
+
+    img {
+        position: absolute;
+        bottom: 80px
+    }
+}
+
+.type {
+    padding: 5px;
+    background-color: rgb(59, 209, 214);
+    color: $whiteColor;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 343px;
+}
+
+.flex_bet {
+    display: flex;
+    justify-content: space-between;
 }

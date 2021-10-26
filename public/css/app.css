@@ -43,6 +43,18 @@ h1 {
   color: white;
 }
 
+.jumbotron {
+  height: 400px;
+  width: 100%;
+  background-image: url("/images/jumbotron.jpg");
+  background-size: cover;
+}
+
+.banner {
+  height: 60px;
+  background-color: #0282f9;
+}
+
 header {
   display: flex;
   text-align: center;
@@ -144,8 +156,50 @@ footer .btn_footer {
 }
 
 .container_char_card {
-  background-color: cadetblue;
-  height: 1000px;
+  background-color: white;
+  height: 450px;
+  padding: 50px 300px;
+}
+
+.descr_wrap {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.descr_first_half {
+  margin-right: 100px;
+}
+
+.spec_wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.specs {
+  margin-right: 140px;
+}
+
+.relative {
+  position: relative;
+}
+.relative img {
+  position: absolute;
+  bottom: 80px;
+}
+
+.type {
+  padding: 5px;
+  background-color: #3bd1d6;
+  color: white;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 343px;
+}
+
+.flex_bet {
+  display: flex;
+  justify-content: space-between;
 }
 
 .container {

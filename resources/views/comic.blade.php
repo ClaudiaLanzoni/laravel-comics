@@ -5,58 +5,80 @@
 @section('content')
     <div class="container_char_card">
 
-        {{-- thumb --}}
-        <img src="{{ $comic['thumb'] }}" alt="Comic image">
+        <div class="relative">
+            {{-- thumb --}}
+            <img src="{{ $comic['thumb'] }}" alt="Comic image">
 
-        {{-- type --}}
-        <div>{{$comic['type']}}</div>
+            {{-- type --}}
+            <div class="type">{{$comic['type']}}</div>
+        </div>
         
-        {{-- title --}}
-        <h2>{{$comic['title']}}</h2>
+        <div class="descr_wrap">
 
-        {{-- price --}}
-        <div>
-            <div>{{$comic['price']}}</div>
+            <div class="descr-first-half">
+                {{-- title --}}
+                <h2>{{$comic['title']}}</h2>
 
-            <img class="" src="{{ asset('images/apply.png') }}" alt="Comic image">
+                {{-- price --}}
+                <div>
+                    <div>{{$comic['price']}}</div>
+                </div>
+
+                {{-- description --}}
+                <p>{{$comic['description']}}</p>
+            </div>
+             
+            <div>
+                <img class="" src="{{ asset('images/apply.png') }}" alt="Comic image">
+            </div>
         </div>
 
-        {{-- description --}}
-        <p>{{$comic['description']}}</p>
-
         {{-- specifiche prodotto --}}
-        <div>
+        <div class="spec_wrap">
             <div>
                 <h3>Talent</h3>
-
+                
                 @foreach ($comic['artists'] as $artist)
                     {{-- artists --}}
-                    <div>Art by:</div>
-                    <p>{{$artist}}</p>
+                    <div class="flex_bet">
+                        <div>Art by:</div>
+                        <p>{{$artist}}</p>
+                    </div>
                 @endforeach
                 
                 @foreach ($comic['writers'] as $writer)
                     {{-- writers --}}
-                    <div>Written by:</div>
-                    <p>{{$writer}}</p>
+                    <div class="flex_bet">
+                        <div>Written by:</div>
+                        <p>{{$writer}}</p>
+                    </div>
                 @endforeach
                 
             </div>
 
-            <div>
+            <div class="specs">
                 <h3>Specs</h3>
 
                 {{-- series --}}
-                <div>Series:</div>
-                <p>{{$comic['series']}}</p>
+                <div class="flex_bet">
+                    <div>Series:</div>
+                    <p>{{$comic['series']}}</p>
+                </div>
+                
 
                 {{-- price --}}
-                <div>U.S. Price:</div>
-                <p>{{$comic['price']}}</p>
+                <div class="flex_bet">
+                    <div>U.S. Price:</div>
+                    <p>{{$comic['price']}}</p>
+                </div>
+                
 
                 {{-- sale_date --}}
-                <div>On Sale Date:</div>
-                <p>{{$comic['sale_date']}}</p>
+                <div class="flex_bet">
+                    <div>On Sale Date:</div>
+                    <p>{{$comic['sale_date']}}</p>
+                </div>
+                
             </div>
         </div>
     </div>

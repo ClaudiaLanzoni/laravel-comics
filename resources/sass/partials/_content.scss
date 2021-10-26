@@ -43,7 +43,17 @@ h1 {
     
 }
 
+.jumbotron {
+    height: 400px;
+    width: 100%;
+    background-image: url('/images/jumbotron.jpg');
+    background-size: cover;
+}
 
+.banner {
+    height: 60px;
+    background-color: $dcLogoColor;
+}
 
 
 
