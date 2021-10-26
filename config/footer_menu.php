@@ -3,12 +3,12 @@
     return [
         ["title" => "dc comics", 
         "content" => [
-            "characters", "comics", "movies", "tv", "games", "videos", "news"
+            "Characters", "Comics", "Movies", "Tv", "Games", "Videos", "News"
         ]
         ],
         ["title" => "shop", 
         "content" => [
-            "shop dc", "shop dc collectibles"]
+            "Shop dc", "Shop dc collectibles"]
         ],
         ["title" => "dc", 
         "content" => [

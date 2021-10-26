@@ -1,28 +1,42 @@
-.card_section {
-    padding: 50px 100px 40px 100px;
-    height: 500px;
-    display: flex;
-    flex-wrap: wrap;
+h1 {
+    color: $whiteColor;
+}
+
+.main_wrap {
+    background-color: $blackColor;
+}
+
+.main_section {
+    //height: 1000px;
+    padding: 50px 50px 40px 100px;
     margin: 0 auto;
 }
 
+.card_section {
+    //padding: 50px 200px 40px 200px;
+    display: flex;
+    flex-wrap: wrap;
+    //margin: 0 auto;
+}
+
 .card_element {
-    //flex-basis: calc(100% / 6);
-    margin: 20px;
-    height: 150px;
-    width: 150px;
+    flex-basis: calc((100% / 5) - 60px);
+    margin: 10px;
     overflow: hidden;
     //word-wrap: break-word; 
+
+        img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
 }
 
-.card_img_container {
-    height: 100%;
-    width: 100%;
-}
 
 .series_name_style {
-    //font-family: $seriesFont;
-    font-size: 12px;
+    width: 150px;
+    font-family: $seriesFont;
+    font-size: 10px;
     text-transform: uppercase;
     text-align: center;
     color: $whiteColor;

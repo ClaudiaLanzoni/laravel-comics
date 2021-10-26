@@ -1,0 +1,107 @@
+footer {
+
+    margin-top: 100px;
+
+    h3 {
+        color: $whiteColor;
+        text-transform: uppercase;
+        font-family: $listItemsFont;
+        margin-top: 20px;
+    }
+
+    .bg_black {
+        background-color: $blackColor;
+        padding: 50px 50px 40px 100px;
+    }
+
+    ul {
+        list-style: none;
+        text-decoration-style: none;
+        font-family: $listItemsFont;
+        font-size: 10px;
+    }
+
+    li {
+        text-decoration: none;
+        color: $whiteColor;
+        line-height: 20px;
+        word-spacing: 7px;
+   
+        &:hover {
+            color : $dcLogoColor;
+        }
+    }
+
+    .upper_footer_wrap {
+        background-image: asset('images/vue-dc-comics-1/img/footer-bg.jpg');
+        background-color: black;
+        height: 400px;
+        display: flex;
+        justify-content: space-between;
+        //padding: 0px 100px 0px 100px;
+    }
+
+    .downer_footer_wrap {
+        display: flex;
+        justify-content: space-between;
+        background-color: $downerFooterBg;
+        height: 80px;
+        padding: 20px 100px 30px 100px;
+
+        p {
+            color: $dcLogoColor;
+        }
+    }
+
+    .media_logo_section {
+
+        img {
+            padding-left: 15px;
+        }
+    }
+
+    .my_inline {
+        display: inline-block;
+    }
+
+    .flex_list {
+        display: flex;
+        justify-content: flex-start;
+        
+        div { 
+            padding-right: 50px; 
+            text-align: left;
+        }
+
+        h2 {
+            color: $whiteColor;
+            margin-bottom: 20px;
+            padding-top: 40px;
+        }
+    }
+
+    .overflow_bg {
+        overflow: hidden;
+    }
+
+     .dc_logo_bg {
+            height: 500px;
+            width: 500px;
+            margin-top: -35px;
+        }
+
+
+    .btn_footer {
+      border-color: $dcLogoColor;
+      color: $whiteColor;
+      background-color: transparent;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px;
+      line-height: 4px;
+      text-transform: uppercase;
+      font-family: 'Staatliches';
+    }
+}

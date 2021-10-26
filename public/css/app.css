@@ -1,25 +1,148 @@
-* {
+@import url(https://fonts.googleapis.com/css2?family=Staatliches&display=swap);@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap);@import url(https://fonts.googleapis.com/css2?family=Forum&display=swap);* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+h1 {
+  color: white;
+}
+
+.main_wrap {
+  background-color: black;
+}
+
+.main_section {
+  padding: 50px 50px 40px 100px;
+  margin: 0 auto;
+}
+
+.card_section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card_element {
+  flex-basis: calc(20% - 60px);
+  margin: 10px;
+  overflow: hidden;
+}
+.card_element img {
+  width: 150px;
+  height: 150px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.series_name_style {
+  width: 150px;
+  font-family: "Forum";
+  font-size: 10px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
 }
 
 header {
   display: flex;
   text-align: center;
 }
-
 header ul {
   display: inline-block;
   display: flex;
 }
-
 header ul li {
   list-style-type: none;
   padding: 20px;
 }
 
+footer {
+  margin-top: 100px;
+}
+footer h3 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Roboto Slab";
+  margin-top: 20px;
+}
+footer .bg_black {
+  background-color: black;
+  padding: 50px 50px 40px 100px;
+}
+footer ul {
+  list-style: none;
+  -webkit-text-decoration-style: none;
+          text-decoration-style: none;
+  font-family: "Roboto Slab";
+  font-size: 10px;
+}
+footer li {
+  text-decoration: none;
+  color: white;
+  line-height: 20px;
+  word-spacing: 7px;
+}
+footer li:hover {
+  color: #0282f9;
+}
+footer .upper_footer_wrap {
+  background-image: asset("images/vue-dc-comics-1/img/footer-bg.jpg");
+  background-color: black;
+  height: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+footer .downer_footer_wrap {
+  display: flex;
+  justify-content: space-between;
+  background-color: #303030;
+  height: 80px;
+  padding: 20px 100px 30px 100px;
+}
+footer .downer_footer_wrap p {
+  color: #0282f9;
+}
+footer .media_logo_section img {
+  padding-left: 15px;
+}
+footer .my_inline {
+  display: inline-block;
+}
+footer .flex_list {
+  display: flex;
+  justify-content: flex-start;
+}
+footer .flex_list div {
+  padding-right: 50px;
+  text-align: left;
+}
+footer .flex_list h2 {
+  color: white;
+  margin-bottom: 20px;
+  padding-top: 40px;
+}
+footer .overflow_bg {
+  overflow: hidden;
+}
+footer .dc_logo_bg {
+  height: 500px;
+  width: 500px;
+  margin-top: -35px;
+}
+footer .btn_footer {
+  border-color: #0282f9;
+  color: white;
+  background-color: transparent;
+  padding: 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  line-height: 4px;
+  text-transform: uppercase;
+  font-family: "Staatliches";
+}
+
 .container {
   padding: 0 200px 0 200px;
 }
-

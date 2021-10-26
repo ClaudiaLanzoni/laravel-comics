@@ -1,5 +1,7 @@
 <footer>
+    <div class="bg_black">
 
+    
     @foreach ($footer_links as $valore)
 
         <h3>{{$valore['title']}}</h3>   
@@ -12,6 +14,6 @@
 
     @endforeach
 
-   
+</div>
     
 </footer>

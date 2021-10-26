@@ -17,15 +17,21 @@
         {{-- Strumento per importare un blade parziale --}}
         @include('partials.header', ['header_links' => config('header_menu')])
 
-        <main>
+    </div>
+    
+
+        <main class="main_wrap">
+            
             {{-- Strumento per esporre un punto di accesso "yield" --}}
             @yield('content')
             
         </main>
 
+       
+
         @include('partials.footer', ['footer_links' => config('footer_menu')])
 
-    </div>
+   
     
     <script type="text/javascript" src="{{ asset('js/app.js') }}"></script>
 </body>
