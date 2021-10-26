@@ -37,22 +37,25 @@
         <div class="spec_wrap">
             <div>
                 <h3>Talent</h3>
-                
-                @foreach ($comic['artists'] as $artist)
-                    {{-- artists --}}
-                    <div class="flex_bet">
-                        <div>Art by:</div>
-                        <p>{{$artist}}</p>
-                    </div>
-                @endforeach
-                
-                @foreach ($comic['writers'] as $writer)
+
+                {{-- artists --}}
+                <div class="flex_bet">
+                    <div>Art by: </div>
+
+                    @foreach ($comic['artists'] as $artist)
+                        <p>{{$artist}},</p>
+                    @endforeach
+                </div>
+                   
                     {{-- writers --}}
-                    <div class="flex_bet">
-                        <div>Written by:</div>
+                <div class="flex_bet">
+                    <div>Written by: </div>
+                    
+                    @foreach ($comic['writers'] as $writer)
                         <p>{{$writer}}</p>
-                    </div>
-                @endforeach
+                    @endforeach
+                </div>
+                
                 
             </div>
 

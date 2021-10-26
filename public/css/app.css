@@ -157,7 +157,7 @@ footer .btn_footer {
 
 .container_char_card {
   background-color: white;
-  height: 450px;
+  height: 800px;
   padding: 50px 300px;
 }
 
@@ -176,10 +176,6 @@ footer .btn_footer {
   justify-content: space-between;
 }
 
-.specs {
-  margin-right: 140px;
-}
-
 .relative {
   position: relative;
 }
@@ -195,11 +191,6 @@ footer .btn_footer {
   text-transform: uppercase;
   position: absolute;
   bottom: 343px;
-}
-
-.flex_bet {
-  display: flex;
-  justify-content: space-between;
 }
 
 .container {

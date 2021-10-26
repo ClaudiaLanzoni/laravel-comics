@@ -1,7 +1,7 @@
 
 .container_char_card {
     background-color: $whiteColor;
-    height: 450px;
+    height: 800px;
     padding: 50px 300px;
 }
 
@@ -20,9 +20,7 @@
     justify-content: space-between;
 }
 
-.specs {
-    margin-right: 140px;
-}
+
 
 .relative {
     position: relative;
@@ -40,9 +38,4 @@
     text-transform: uppercase;
     position: absolute;
     bottom: 343px;
-}
-
-.flex_bet {
-    display: flex;
-    justify-content: space-between;
 }
