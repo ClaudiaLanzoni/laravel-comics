@@ -1,8 +1,7 @@
 
 .container_char_card {
     background-color: $whiteColor;
-    height: 800px;
-    padding: 50px 300px;
+    padding: 50px 250px;
 }
 
 .descr_wrap {
@@ -33,9 +32,94 @@
 
 .type {
     padding: 5px;
-    background-color: rgb(59, 209, 214);
+    background-color: #00a9d9;
     color: $whiteColor;
     text-transform: uppercase;
     position: absolute;
     bottom: 343px;
+}
+
+.comic_title {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    color: $comicTitle;
+}
+
+.price_box {
+    height: 40px;
+    background-color: #55ba59;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 30px;
+    padding: 10px;
+    border-bottom: 1px solid $listItemsColor;
+    margin-bottom: 20px;
+
+    div {
+        display: inline-block;
+    }
+
+    .available_box {
+        height: 40px;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-right: 1px solid $listItemsColor;
+        padding-right: 10px;
+    }
+}
+
+.descr_box {
+    margin-right: 30px;
+}
+
+.spec_wrap {
+    background-color: $specBg;
+    border-bottom: 1px solid $lightBorder;
+    border-top: 1px solid $lightBorder;
+}
+
+.container_spec {
+    padding: 0 300px;
+    display: flex;
+
+        .talent,
+        .specs {
+            width: 400px;
+            margin-right: 40px;
+            margin-bottom: 70px;
+            h3 {
+                color: $comicTitle;
+                padding: 20px 0;
+                border-bottom: 1px solid $lightBorder;
+            }
+        }
+}
+
+.flex_bet {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid $lightBorder;
+    font-size: 12px;
+
+      .artists {
+        color: $dcLogoColor;
+        width: 300px;
+            p {
+                display: inline-block;
+                
+            }
+      }
+
+      .title_category {
+        width: 120px;
+    
+      }
+}
+
+.series_font {
+    color: $dcLogoColor;
+    text-transform: uppercase;
 }

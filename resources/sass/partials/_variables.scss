@@ -1,14 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 
 $bodyFont : 'Staatliches';
 $listItemsFont : 'Roboto Slab';
 $seriesFont: 'Forum';
+$comicBoxFont: 'Roboto';
 
 //variabili colore
 $whiteColor : white;
 $blackColor : black;
 $dcLogoColor : #0282f9;
 $downerFooterBg : #303030;
+$listItemsColor : #443a3a;
+$comicTitle : #003f5e;
+$specBg : #f6f6f6;
+$lightBorder: #d3d3d3;

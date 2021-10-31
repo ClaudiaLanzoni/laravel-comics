@@ -4,8 +4,12 @@
 @import "partials/header";
 @import "partials/footer";
 @import "partials/comic";
+@import "~font-awesome/scss/font-awesome.scss";
 
 .container {
     padding: 0 200px 0 200px;
 }
 
+body {
+    font-family: $comicBoxFont;
+}

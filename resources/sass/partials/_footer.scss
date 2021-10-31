@@ -1,7 +1,5 @@
 footer {
 
-    margin-top: 100px;
-
     h3 {
         color: $whiteColor;
         text-transform: uppercase;
@@ -9,9 +7,9 @@ footer {
         margin-top: 20px;
     }
 
-    .bg_black {
-        background-color: $blackColor;
-        padding: 50px 50px 40px 100px;
+    .ul_wrap {
+        display: flex;
+        justify-content: flex-start;
     }
 
     ul {
@@ -19,6 +17,7 @@ footer {
         text-decoration-style: none;
         font-family: $listItemsFont;
         font-size: 10px;
+    
     }
 
     li {
@@ -33,12 +32,23 @@ footer {
     }
 
     .upper_footer_wrap {
-        background-image: asset('images/vue-dc-comics-1/img/footer-bg.jpg');
-        background-color: black;
-        height: 400px;
+        background-image: url('/images/footer-bg.jpg');
+        padding: 0px 0px 0 200px;
         display: flex;
-        justify-content: space-between;
-        //padding: 0px 100px 0px 100px;
+        height: 400px;
+
+        .items_wrap {
+            display: flex;
+
+            .items_box {
+                margin-right: 20px;
+                
+                h3 {
+                    font-family: $comicBoxFont;
+                    margin: 30px 0 20px 0;
+                }
+            }
+        }
     }
 
     .downer_footer_wrap {
@@ -46,7 +56,7 @@ footer {
         justify-content: space-between;
         background-color: $downerFooterBg;
         height: 80px;
-        padding: 20px 100px 30px 100px;
+        padding: 20px 100px 20px 100px;
 
         p {
             color: $dcLogoColor;
@@ -55,13 +65,16 @@ footer {
 
     .media_logo_section {
 
+        display: flex;
+        align-items: center;
         img {
             padding-left: 15px;
         }
-    }
 
-    .my_inline {
-        display: inline-block;
+        p {
+            display: inline-block;
+            text-transform: uppercase;
+        }
     }
 
     .flex_list {
@@ -85,9 +98,9 @@ footer {
     }
 
      .dc_logo_bg {
-            height: 500px;
-            width: 500px;
-            margin-top: -35px;
+            height: 450px;
+            width: 450px;
+            margin-top: -40px;
         }
 
 

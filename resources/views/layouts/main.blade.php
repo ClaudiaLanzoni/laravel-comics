@@ -12,6 +12,11 @@
 </head>
 <body>
 
+    <div class="mark_box">
+        <div class="mark">Dc power &#8480; visa &reg;</div>
+        <div>Additional DC site &#9660;</div>
+    </div>
+
     <div class="container">
 
         {{-- Strumento per importare un blade parziale --}}

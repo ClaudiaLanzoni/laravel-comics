@@ -28,7 +28,11 @@ h1 {
         img {
             width: 150px;
             height: 150px;
-            object-fit: cover;
+            object-fit: contain;
+        }
+
+        a {
+            text-decoration: none;
         }
 }
 
