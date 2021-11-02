@@ -37,7 +37,8 @@
                 
             </div>
              
-            <div>
+            <div class="apply_box">
+                <h4>Advertisement</h4>
                 <img class="" src="{{ asset('images/apply.png') }}" alt="Comic image">
             </div>
         </div>

@@ -35,7 +35,7 @@ h1 {
   margin: 10px;
   overflow: hidden;
 }
-.card_element img {
+.card_element .img {
   width: 150px;
   height: 150px;
   -o-object-fit: contain;
@@ -81,27 +81,29 @@ header ul {
 }
 header ul li {
   list-style-type: none;
-  padding: 20px;
+  padding: 15px;
 }
 header a {
   text-decoration: none;
   color: #443a3a;
   font-family: "Staatliches";
+  padding-bottom: 45px;
 }
 header a:active {
   color: #0282f9;
-}
-header a:active .link_line_box {
-  height: 100%;
-  display: flex;
-  align-items: center;
   border-bottom: 5px solid #0282f9;
 }
-
-.search_box {
+header .search_box {
   border-bottom: 2px solid #0282f9;
   width: 100px;
-  font-family: "Staatliches";
+  font-family: "Roboto";
+  display: inline-block;
+  text-align: end;
+  margin-left: 40px;
+}
+header .search_box p {
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .mark_box {
@@ -333,6 +335,13 @@ footer .btn_footer {
 .series_font {
   color: #0282f9;
   text-transform: uppercase;
+}
+
+.apply_box h4 {
+  text-transform: uppercase;
+  color: #443a3a;
+  text-align: end;
+  margin-bottom: 5px;
 }
 
 /*!

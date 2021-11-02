@@ -124,3 +124,12 @@
     text-transform: uppercase;
 }
 
+.apply_box {
+
+    h4 {
+        text-transform: uppercase;
+        color: $listItemsColor;
+        text-align: end;
+        margin-bottom: 5px;
+    }
+}
