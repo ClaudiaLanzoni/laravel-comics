@@ -13,7 +13,7 @@
             
                 
                     <div class="card_element">
-                        <a href="{{url("/comic/$index")}}">
+                        <a href="{{url("/comic$index")}}">
                             <div>
                                 <img class="card_img_container"
                                 src="{{$valore['thumb']}}" alt="{{$valore['title']}} image">

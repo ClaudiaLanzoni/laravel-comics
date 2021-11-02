@@ -31,7 +31,7 @@ Route::get('/tv', function () {
     return view('tv');
 })->name('tv');
 
-Route::get('/comic/{id}', function ($id) {
+Route::get('/comic{id}', function ($id) {
     $comics = config('comics');
 
     if(is_numeric($id) && ($id < count($comics) && $id >= 0)) {

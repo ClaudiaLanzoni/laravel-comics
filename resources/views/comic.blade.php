@@ -57,10 +57,10 @@
                         </div>
                         
                         <div class="artists">
-                            @foreach ($comic['artists'] as $index => $artist)
-                                <p>{{$artist . ','}}</p>
-                            
-                            @endforeach
+
+                            @php
+                            echo implode(", ", $comic['artists'])  
+                            @endphp
                             
                         </div>
 
@@ -74,12 +74,11 @@
                         </div>
                         
                         <div class="artists">
-                            @foreach ($comic['writers'] as $writer)
-                                <p>{{$writer}},</p>
-                                @php
-                                rtrim($writer, ',');
-                                @endphp
-                            @endforeach
+            
+                            @php
+                            echo implode(", ", $comic['writers'])  
+                            @endphp
+                
                         </div>
                         
                     </div>
