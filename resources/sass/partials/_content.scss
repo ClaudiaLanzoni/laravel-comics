@@ -25,10 +25,10 @@ h1 {
     overflow: hidden;
     //word-wrap: break-word; 
 
-        .img {
+        .card_img_container {
             width: 150px;
             height: 150px;
-            object-fit: contain;
+            margin: auto;
         }
 
         a {
